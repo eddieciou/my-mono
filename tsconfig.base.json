@@ -13,9 +13,9 @@
     "lib": ["es2020", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
-    "baseUrl": "./org",
+    "baseUrl": ".",
     "paths": {
-      "@org/common-ui": ["libs/common-ui/src/index.ts"]
+      "@my-mono/common-ui": ["libs/common-ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

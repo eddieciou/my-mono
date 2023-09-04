@@ -2,11 +2,12 @@
 import styles from './app.module.css';
 
 import NxWelcome from './nx-welcome';
+import { Banner } from '@my-mono/common-ui';
 
 export function App() {
   return (
     <div>
-      <NxWelcome title="my-react" />
+      <Banner />
     </div>
   );
 }
