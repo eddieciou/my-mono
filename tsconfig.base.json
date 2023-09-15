@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@my-mono/common-ui": ["libs/common-ui/src/index.ts"]
+      "@my-mono/common-ui": ["libs/common-ui/src/index.ts"],
+      "@my-mono/products": ["libs/products/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
