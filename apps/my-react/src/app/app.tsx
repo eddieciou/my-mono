@@ -1,14 +1,18 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.css';
-
-import NxWelcome from './nx-welcome';
 import { Banner } from '@my-mono/common-ui';
+import { exampleProducts } from '@my-mono/products';
 
 export function App() {
   return (
-    <div>
-      <Banner />
-    </div>
+    <>
+      <Banner text="Welcome to the store!" />
+      <ul>
+        {exampleProducts.map((product) => (
+          <li key={product.id}>
+            <strong>{product.name}</strong> Price: {product.price}
+          </li>
+        ))}
+      </ul>
+    </>
   );
 }
 

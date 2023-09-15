@@ -1,14 +1,9 @@
-import styles from './banner.module.css';
+export interface BannerProps {
+  text: string;
+}
 
-/* eslint-disable-next-line */
-export interface BannerProps {}
-
-export function Banner(props: BannerProps) {
-  return (
-    <div className={styles['container']}>
-      <h1>Welcome to Banner!</h1>
-    </div>
-  );
+export function Banner({ text }: BannerProps) {
+  return <header>{text}</header>;
 }
 
 export default Banner;
